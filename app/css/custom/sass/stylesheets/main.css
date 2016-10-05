@@ -1,0 +1,2313 @@
+/* DO NOT MODIFY CSS FILES DIRECTLY - modify .scss files instead */
+/* line 26, ../sass/_site.scss */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 32, ../sass/_site.scss */
+li {
+  list-style-type: none;
+}
+
+/* line 36, ../sass/_site.scss */
+body {
+  background-image: url("../../../../../assets/images/Rough-Grey-Seamless-Pattern-For-Website-Background.jpg");
+  min-height: 1500px;
+}
+
+/* line 45, ../sass/_site.scss */
+.modal {
+  text-align: center;
+  padding: 0 !important;
+}
+
+/* line 50, ../sass/_site.scss */
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+  /* Adjusts for spacing */
+}
+
+/* line 58, ../sass/_site.scss */
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* line 66, ../sass/_site.scss */
+.hidden {
+  visiblity: hidden;
+}
+
+/* line 71, ../sass/_site.scss */
+.bh-loader-container {
+  position: relative;
+}
+
+/* line 75, ../sass/_site.scss */
+.bh-loader-container > div {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+/* line 80, ../sass/_site.scss */
+.bh-loader-container > .bh-centered-icon + div {
+  opacity: 0.3;
+}
+
+/* line 84, ../sass/_site.scss */
+.bh-loader-container > .bh-centered-icon + div > * {
+  visibility: hidden;
+}
+
+/* line 88, ../sass/_site.scss */
+.bh-loader-container > .bh-centered-icon.hidden {
+  visibility: hidden;
+}
+
+/* line 92, ../sass/_site.scss */
+.bh-centered-icon {
+  font-size: 48px;
+  height: 48px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: slategray;
+  z-index: 100;
+}
+
+/* line 106, ../sass/_site.scss */
+.bh-x-closer {
+  position: absolute;
+  font-size: 18px;
+  top: 10px;
+  right: 13px;
+  cursor: pointer;
+  color: #666;
+}
+
+/* line 115, ../sass/_site.scss */
+.bh-x-closer:hover {
+  color: red;
+}
+
+/* line 120, ../sass/_site.scss */
+.stage-progress-indicator {
+  width: 200px;
+}
+/* line 122, ../sass/_site.scss */
+.stage-progress-indicator .radio-buttons {
+  display: table;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+/* line 128, ../sass/_site.scss */
+.stage-progress-indicator .radio-buttons:before {
+  content: '';
+  height: 5px;
+  background-color: lightgray;
+  position: absolute;
+  width: calc(100% - 100px);
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+/* line 140, ../sass/_site.scss */
+.stage-progress-indicator .radio-buttons .radio-item {
+  width: 90px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+/* line 147, ../sass/_site.scss */
+.stage-progress-indicator .radio-buttons .radio-item input[type=radio] {
+  display: none;
+}
+/* line 151, ../sass/_site.scss */
+.stage-progress-indicator .radio-buttons .radio-item input[type=radio]:checked + label {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: default;
+}
+/* line 156, ../sass/_site.scss */
+.stage-progress-indicator .radio-buttons .radio-item input[type=radio]:checked + label:before {
+  content: '';
+  width: 46px;
+  height: 46px;
+  border-radius: 23px;
+}
+/* line 171, ../sass/_site.scss */
+.stage-progress-indicator .radio-buttons .radio-item:nth-of-type(1) input[type=radio]:checked + label:before, .stage-progress-indicator .radio-buttons .radio-item:nth-of-type(3) input[type=radio]:checked + label:before {
+  content: '';
+  background-color: #B1B17B;
+}
+/* line 185, ../sass/_site.scss */
+.stage-progress-indicator .radio-buttons .radio-item:nth-of-type(2) input[type=radio]:checked + label:before {
+  content: '';
+  background-color: #ff9966;
+}
+/* line 195, ../sass/_site.scss */
+.stage-progress-indicator .radio-buttons .radio-item label {
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  position: relative;
+  margin-bottom: 0;
+}
+/* line 202, ../sass/_site.scss */
+.stage-progress-indicator .radio-buttons .radio-item label:before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #aaa;
+  z-index: -1;
+}
+
+/* line 220, ../sass/_site.scss */
+.bh-input-dollars-and-cents {
+  position: relative;
+}
+/* line 222, ../sass/_site.scss */
+.bh-input-dollars-and-cents:before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 90px;
+  font-size: 16px;
+}
+/* line 230, ../sass/_site.scss */
+.bh-input-dollars-and-cents input {
+  padding: 5px;
+  text-align: right;
+  width: 100%;
+  height: 25px;
+  border: 1px solid #aaa;
+}
+/* line 239, ../sass/_site.scss */
+.bh-input-dollars-and-cents input.saving {
+  color: #aaa;
+}
+/* line 244, ../sass/_site.scss */
+.bh-input-dollars-and-cents .fa {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -15px;
+}
+/* line 250, ../sass/_site.scss */
+.bh-input-dollars-and-cents .fa-check {
+  color: green;
+}
+/* line 254, ../sass/_site.scss */
+.bh-input-dollars-and-cents .fa-hourglass-half {
+  color: #888;
+}
+/* line 258, ../sass/_site.scss */
+.bh-input-dollars-and-cents .fa-thumbs-o-down {
+  color: crimson;
+}
+
+/* line 3, ../sass/_todo-bids-list.scss */
+.todo-bids-list .single-bid {
+  margin-top: 5px;
+  position: relative;
+  display: table;
+  width: 100%;
+  background: linear-gradient(to right, transparent 10px, white 10px);
+  border: 1px solid #aaa;
+}
+/* line 12, ../sass/_todo-bids-list.scss */
+.todo-bids-list .single-bid .bid-status {
+  width: 10px;
+  display: table-cell;
+  height: 100%;
+  border-right: solid 10px white;
+}
+/* line 19, ../sass/_todo-bids-list.scss */
+.todo-bids-list .single-bid.status_active .bid-status {
+  border-right-color: green;
+}
+/* line 23, ../sass/_todo-bids-list.scss */
+.todo-bids-list .single-bid.status_hold .bid-status {
+  border-right-color: goldenrod;
+}
+/* line 27, ../sass/_todo-bids-list.scss */
+.todo-bids-list .single-bid .bid-content {
+  display: table-cell;
+  background-color: white;
+}
+/* line 32, ../sass/_todo-bids-list.scss */
+.todo-bids-list .bid-summary {
+  display: table;
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+}
+/* line 39, ../sass/_todo-bids-list.scss */
+.todo-bids-list .single-bid .high-priority-alert {
+  width: 25px;
+  color: white;
+  background-color: red;
+  text-align: center;
+  font-size: 20px;
+}
+/* line 47, ../sass/_todo-bids-list.scss */
+.todo-bids-list .single-bid:not(.priority_high) .high-priority-alert {
+  visibility: hidden;
+}
+/* line 52, ../sass/_todo-bids-list.scss */
+.todo-bids-list .bid-summary > * {
+  display: table-cell;
+  vertical-align: bottom;
+}
+/* line 57, ../sass/_todo-bids-list.scss */
+.todo-bids-list .bid-summary i {
+  color: #888;
+  font-style: normal;
+  padding-right: 5px;
+}
+/* line 64, ../sass/_todo-bids-list.scss */
+.todo-bids-list .bid-summary .bid-num {
+  text-align: left;
+  padding: 0 10px;
+}
+/* line 71, ../sass/_todo-bids-list.scss */
+.todo-bids-list .bid-summary .due-date {
+  text-align: right;
+  padding: 0 25px;
+}
+/* line 77, ../sass/_todo-bids-list.scss */
+.todo-bids-list .bid-details {
+  display: table;
+  width: 100%;
+  padding: 0px 25px 5px 35px;
+  font-size: 14px;
+}
+/* line 85, ../sass/_todo-bids-list.scss */
+.todo-bids-list .bid-details > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 91, ../sass/_todo-bids-list.scss */
+.todo-bids-list .bid-details .customer {
+  width: 50%;
+  text-align: left;
+  white-space: nowrap;
+  height: 50px;
+}
+/* line 99, ../sass/_todo-bids-list.scss */
+.todo-bids-list .bid-details .amount {
+  text-align: right;
+  font-size: 20px;
+}
+/* line 104, ../sass/_todo-bids-list.scss */
+.todo-bids-list .bid-details .customer .parentName {
+  color: #888;
+  display: none;
+}
+/* line 109, ../sass/_todo-bids-list.scss */
+.todo-bids-list .bid-details .customer .name {
+  display: inline-block;
+  font-size: 20px;
+  display: none;
+}
+/* line 115, ../sass/_todo-bids-list.scss */
+.todo-bids-list .bid-details .customer .location {
+  display: inline-block;
+  color: #888;
+}
+/* line 122, ../sass/_todo-bids-list.scss */
+.todo-bids-list ul.initials-list {
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 0;
+  /* override ul */
+  padding: 0 10px 0 28px;
+}
+/* line 129, ../sass/_todo-bids-list.scss */
+.todo-bids-list li.initials-holder {
+  display: inline-block;
+  width: calc(100%/ 16);
+  text-align: center;
+}
+/* line 135, ../sass/_todo-bids-list.scss */
+.todo-bids-list li.initials-holder .status-indicator {
+  width: 98%;
+  background-color: transparent;
+  /* increase hover area */
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  top: -8px;
+}
+/* line 144, ../sass/_todo-bids-list.scss */
+.todo-bids-list li.initials-holder .status-indicator:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  top: 1px;
+  background-color: transparent;
+  border-radius: 2px;
+}
+/* line 155, ../sass/_todo-bids-list.scss */
+.todo-bids-list li.initials-holder.hold .status-indicator:after {
+  background-color: goldenrod;
+}
+/* line 159, ../sass/_todo-bids-list.scss */
+.todo-bids-list li.initials-holder.done .status-indicator:after {
+  background-color: green;
+}
+/* line 163, ../sass/_todo-bids-list.scss */
+.todo-bids-list .initials-holder .initials {
+  color: #222;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: default;
+  text-align: center;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  position: relative;
+  letter-spacing: 1px;
+  cursor: default;
+  top: 8px;
+}
+/* line 179, ../sass/_todo-bids-list.scss */
+.todo-bids-list .initials-holder.no-issues .initials {
+  color: #aaa;
+  font-weight: normal;
+}
+/* line 184, ../sass/_todo-bids-list.scss */
+.todo-bids-list .top-area {
+  display: table;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+/* line 190, ../sass/_todo-bids-list.scss */
+.todo-bids-list .top-area .my-column {
+  display: table-cell;
+}
+/* line 194, ../sass/_todo-bids-list.scss */
+.todo-bids-list .top-area .my-column.navigate {
+  width: 40px;
+  background-color: aliceblue;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 200, ../sass/_todo-bids-list.scss */
+.todo-bids-list .top-area .my-column.navigate i {
+  color: lightblue;
+  font-size: 18px;
+}
+/* line 204, ../sass/_todo-bids-list.scss */
+.todo-bids-list .top-area .my-column.navigate:hover i {
+  color: lightskyblue;
+}
+/* line 209, ../sass/_todo-bids-list.scss */
+.todo-bids-list .container-todo-pagination-panel {
+  margin: 1px 0 50px 0;
+}
+/* line 213, ../sass/_todo-bids-list.scss */
+.todo-bids-list bh-stage-progress-indicator {
+  position: absolute;
+  left: 370px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 3, ../sass/_todo-filter-panel.scss */
+.todo-filter-panel {
+  height: 100%;
+  background-color: white;
+  font-size: 16px;
+  border: 1px solid #aaa;
+}
+/* line 10, ../sass/_todo-filter-panel.scss */
+.todo-filter-panel .contents {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+/* line 17, ../sass/_todo-filter-panel.scss */
+.todo-filter-panel .total-bids {
+  position: relative;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 25%;
+}
+/* line 25, ../sass/_todo-filter-panel.scss */
+.todo-filter-panel .total-bids a {
+  height: 125px;
+  width: 125px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+/* line 36, ../sass/_todo-filter-panel.scss */
+.todo-filter-panel .total-bids .qty {
+  font-size: 48px;
+  position: relative;
+  top: -5px;
+}
+/* line 42, ../sass/_todo-filter-panel.scss */
+.todo-filter-panel .total-bids .caption {
+  font-size: 18px;
+  position: relative;
+  top: -10px;
+}
+/* line 48, ../sass/_todo-filter-panel.scss */
+.todo-filter-panel .total-bids:before {
+  content: "";
+  width: 130px;
+  height: 130px;
+  border: 5px solid #ccc;
+  border-radius: 65px;
+  position: absolute;
+  left: 50%;
+  top: 74px;
+  /* IE cannot handle top % */
+  transform: translate(-50%, -50%);
+}
+/* line 60, ../sass/_todo-filter-panel.scss */
+.todo-filter-panel .total-bids:hover {
+  text-shadow: 0 0 0 #222;
+}
+
+/* line 5, ../sass/_todo-header.scss */
+.todo-header .content {
+  height: 75px;
+  width: 100%;
+  background-color: #669999;
+  display: table;
+  color: white;
+}
+/* line 13, ../sass/_todo-header.scss */
+.todo-header .content .column {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 18, ../sass/_todo-header.scss */
+.todo-header .content .column.logo {
+  width: 7%;
+  text-align: center;
+  background-color: #222;
+}
+/* line 24, ../sass/_todo-header.scss */
+.todo-header .content .column.logo img {
+  width: 60px;
+}
+/* line 28, ../sass/_todo-header.scss */
+.todo-header .content .column.title {
+  text-align: left;
+  font-size: 32px;
+  padding-left: 50px;
+}
+/* line 34, ../sass/_todo-header.scss */
+.todo-header .content .column.name {
+  text-align: right;
+  font-size: 18px;
+  padding-right: 50px;
+}
+/* line 40, ../sass/_todo-header.scss */
+.todo-header .content .column.photo {
+  width: 7%;
+  text-align: center;
+}
+/* line 45, ../sass/_todo-header.scss */
+.todo-header .content .column.photo i {
+  font-size: 32px;
+  border: 3px solid white;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+
+/* line 3, ../sass/_todo-page.scss */
+#todo-page {
+  width: 1325px;
+  margin: 0 auto;
+  padding: 10px 0;
+  min-height: 1000px;
+}
+/* line 13, ../sass/_todo-page.scss */
+#todo-page #todo-left-panel {
+  margin-top: 5px;
+  margin-bottom: 50px;
+  width: 60%;
+  float: left;
+}
+/* line 20, ../sass/_todo-page.scss */
+#todo-page #todo-right-panel {
+  margin-top: 5px;
+  width: calc(40% - 5px);
+  height: 1800px;
+  float: right;
+}
+/* line 27, ../sass/_todo-page.scss */
+#todo-page #container-todo-subject-select-panel {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 5px;
+}
+/* line 33, ../sass/_todo-page.scss */
+#todo-page #container-todo-filter-panel {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 5px;
+}
+/* line 39, ../sass/_todo-page.scss */
+#todo-page #container-todo-snapshot-filter-panel {
+  height: 175px;
+  margin-bottom: 5px;
+}
+/* line 44, ../sass/_todo-page.scss */
+#todo-page #container-todo-snapshot-bidders-buyers {
+  margin-bottom: 5px;
+}
+/* line 48, ../sass/_todo-page.scss */
+#todo-page #container-todo-bids-list {
+  width: 100%;
+  min-height: 300px;
+}
+/* line 53, ../sass/_todo-page.scss */
+#todo-page .container-todo-pagination-panel.bottom {
+  margin-top: 5px;
+}
+/* line 57, ../sass/_todo-page.scss */
+#todo-page .bottom .bh-centered-icon + .todo-pagination-panel {
+  /* hide during page load */
+  visibility: hidden;
+}
+/* line 61, ../sass/_todo-page.scss */
+#todo-page .container-todo-pagination-panel.bottom .fa-cog {
+  /* no gear on bottom pagination panel */
+  visibility: hidden;
+}
+/* line 65, ../sass/_todo-page.scss */
+#todo-page .container-details-pagination-panel.bottom .fa-cog {
+  /* no gear on bottom pagination panel */
+  visibility: hidden;
+}
+/* line 69, ../sass/_todo-page.scss */
+#todo-page pre {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* line 3, ../sass/_todo-pagination-panel.scss */
+.todo-pagination-panel {
+  background-color: white;
+  display: table;
+  width: 100%;
+  padding: 10px 0 5px 0;
+  border: 1px solid #aaa;
+}
+/* line 11, ../sass/_todo-pagination-panel.scss */
+.todo-pagination-panel > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 16, ../sass/_todo-pagination-panel.scss */
+.todo-pagination-panel .widget-container {
+  text-align: right;
+}
+/* line 20, ../sass/_todo-pagination-panel.scss */
+.todo-pagination-panel .gear-holder {
+  width: 40px;
+  text-align: center;
+}
+/* line 25, ../sass/_todo-pagination-panel.scss */
+.todo-pagination-panel .fa-cog {
+  font-family: FontAwesome;
+  content: "\f013";
+  /* cog */
+  font-size: 18px;
+  color: lightblue;
+  display: block;
+  cursor: pointer;
+}
+/* line 33, ../sass/_todo-pagination-panel.scss */
+.todo-pagination-panel .fa-cog:hover {
+  color: lightskyblue;
+}
+/* line 38, ../sass/_todo-pagination-panel.scss */
+.todo-pagination-panel .pagination-caption {
+  font-size: 14px;
+  text-align: left;
+  padding-left: 45px;
+}
+/* line 45, ../sass/_todo-pagination-panel.scss */
+.todo-pagination-panel .pagination-sm {
+  margin: 0;
+}
+/* line 49, ../sass/_todo-pagination-panel.scss */
+.todo-pagination-panel .pagination-sm > li > a {
+  font-size: 14px;
+}
+/* line 54, ../sass/_todo-pagination-panel.scss */
+.todo-pagination-panel .items-per-page-caption {
+  right: 160px;
+  font-size: 16px;
+  display: none;
+}
+/* line 60, ../sass/_todo-pagination-panel.scss */
+.todo-pagination-panel .popover {
+  margin: 12px 3px 0 10px;
+  background-color: mistyrose;
+}
+/* line 65, ../sass/_todo-pagination-panel.scss */
+.todo-pagination-panel .popover-content {
+  display: inline-flex;
+  /* horizonal alignment of buttons */
+}
+/* line 69, ../sass/_todo-pagination-panel.scss */
+.todo-pagination-panel .popover-title {
+  font-style: italic;
+}
+/* line 73, ../sass/_todo-pagination-panel.scss */
+.todo-pagination-panel .popup-closer {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  color: gray;
+  cursor: pointer;
+}
+/* line 81, ../sass/_todo-pagination-panel.scss */
+.todo-pagination-panel .popup-closer:hover {
+  color: crimson;
+}
+
+/* line 3, ../sass/_todo-radio-set.scss */
+.radio-buttons-set .radio-item {
+  float: left;
+  width: calc(100% / 5);
+  position: relative;
+  top: 2.1875em;
+}
+/* line 10, ../sass/_todo-radio-set.scss */
+.radio-buttons-set .radio-item:nth-child(3):after {
+  content: "";
+  height: 5.5em;
+  width: 0.125em;
+  background-color: brown;
+  position: absolute;
+  right: 1.25em;
+  top: -0.2em;
+}
+/* line 20, ../sass/_todo-radio-set.scss */
+.radio-buttons-set label {
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  font-weight: normal;
+  /* override bootstrap default */
+}
+/* line 26, ../sass/_todo-radio-set.scss */
+.radio-buttons-set label:hover {
+  text-shadow: 0 0 0 #222;
+}
+/* line 31, ../sass/_todo-radio-set.scss */
+.radio-buttons-set .selected-indicator {
+  width: 75%;
+  height: 0.1875em;
+  background-color: transparent;
+}
+/* line 37, ../sass/_todo-radio-set.scss */
+.radio-buttons-set input[type=radio]:checked + div.selected-indicator {
+  background-color: #333;
+}
+/* line 42, ../sass/_todo-radio-set.scss */
+.radio-buttons-set input {
+  display: none;
+}
+/* line 46, ../sass/_todo-radio-set.scss */
+.radio-buttons-set .radio-item.unselectable label {
+  color: #bbb;
+  cursor: default;
+  pointer-events: none;
+}
+/* line 52, ../sass/_todo-radio-set.scss */
+.radio-buttons-set .radio-item.unselectable input[type=checkbox] {
+  cursor: default;
+}
+/* line 56, ../sass/_todo-radio-set.scss */
+.radio-buttons-set .qty {
+  font-size: 2.25em;
+}
+/* line 60, ../sass/_todo-radio-set.scss */
+.radio-buttons-set .caption {
+  font-size: 1.125em;
+}
+
+/* line 3, ../sass/_todo-snapshot-filter-panel.scss */
+.todo-snapshot-filter-panel {
+  height: 100%;
+  background-color: #eeeeee;
+  font-size: 14px;
+  border: 1px solid #aaa;
+}
+/* line 10, ../sass/_todo-snapshot-filter-panel.scss */
+.todo-snapshot-filter-panel .contents {
+  height: 100%;
+  width: 95%;
+  display: table;
+  margin: 0 auto;
+  position: relative;
+  left: 15px;
+}
+/* line 19, ../sass/_todo-snapshot-filter-panel.scss */
+.todo-snapshot-filter-panel .heading {
+  height: 50px;
+  background-color: #669999;
+}
+/* line 24, ../sass/_todo-snapshot-filter-panel.scss */
+.todo-snapshot-filter-panel .heading p {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 25px;
+}
+/* line 33, ../sass/_todo-snapshot-filter-panel.scss */
+.todo-snapshot-filter-panel .total-bids {
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: -50px;
+  right: 10px;
+}
+/* line 40, ../sass/_todo-snapshot-filter-panel.scss */
+.todo-snapshot-filter-panel .total-bids a {
+  height: 50px;
+  width: 100px;
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+/* line 50, ../sass/_todo-snapshot-filter-panel.scss */
+.todo-snapshot-filter-panel .total-bids .qty {
+  font-size: 24px;
+  position: relative;
+  top: 9px;
+  right: 20px;
+}
+/* line 57, ../sass/_todo-snapshot-filter-panel.scss */
+.todo-snapshot-filter-panel .total-bids .qty:after {
+  content: 'BIDS';
+  font-size: 14px;
+  padding-left: 10px;
+}
+/* line 63, ../sass/_todo-snapshot-filter-panel.scss */
+.todo-snapshot-filter-panel .total-bids .caption {
+  display: none;
+}
+
+/* line 5, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers pre#info {
+  position: relative;
+  left: 100px;
+  color: red;
+}
+/* line 11, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers {
+  background-color: white;
+  border: 1px solid #aaa;
+}
+/* line 16, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .contents {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  font-size: 18px;
+  height: 295px;
+}
+/* line 24, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .contents .list {
+  width: 100%;
+  margin: 0;
+  overflow-y: scroll;
+  height: 100%;
+}
+/* line 30, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .contents .list li {
+  display: table;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 25px 0 35px;
+  position: relative;
+}
+/* line 39, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .contents .list li:nth-child(even) {
+  background-color: #efefef;
+}
+/* line 43, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .contents .list li p {
+  display: table-cell;
+  color: #333;
+}
+/* line 47, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .contents .list li p.name {
+  width: 40%;
+}
+/* line 50, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .contents .list li p.qty {
+  width: 20%;
+  text-align: right;
+}
+/* line 57, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .contents .list li:hover p {
+  text-shadow: 0 0 0 #222;
+}
+/* line 61, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .contents .list li label {
+  cursor: pointer;
+  font-weight: normal;
+}
+/* line 66, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .contents .list li label .skin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+/* line 78, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .contents .list li:last-child {
+  border-bottom: 1px solid #888;
+}
+/* line 81, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .contents .list li input[type=radio] {
+  display: none;
+}
+/* line 85, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .contents .list li input[type=radio]:checked ~ .triangle-left {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 25px 25px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 94, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .contents .list li input[type=radio]:checked ~ label {
+  font-weight: bold;
+  cursor: default;
+}
+/* line 98, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .contents .list li input[type=radio]:checked ~ label .skin {
+  opacity: 0.3;
+}
+/* line 109, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers.panel-buyers .heading {
+  background-color: #ff9966;
+}
+/* line 112, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers.panel-buyers .triangle-left {
+  border-color: transparent #ff9966 transparent transparent;
+}
+/* line 115, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers.panel-buyers .skin {
+  background-color: #ff9966;
+}
+/* line 121, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers.panel-bidders .heading {
+  background-color: #B1B17B;
+}
+/* line 124, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers.panel-bidders .triangle-left {
+  border-color: transparent #B1B17B transparent transparent;
+}
+/* line 127, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers.panel-bidders .skin {
+  background-color: #B1B17B;
+}
+/* line 132, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .heading {
+  height: 50px;
+  background-color: #aaa;
+  color: white;
+}
+/* line 137, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .heading .list {
+  width: 100%;
+  margin: 0;
+  font-size: 14px;
+}
+/* line 142, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .heading .list li {
+  display: table;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 25px 0 35px;
+}
+/* line 148, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .heading .list li:nth-child(even) {
+  background-color: #eee;
+}
+/* line 152, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .heading .list li p {
+  display: table-cell;
+}
+/* line 155, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .heading .list li p.name {
+  font-size: 20px;
+  width: 40%;
+}
+/* line 159, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .heading .list li p.qty {
+  width: 20%;
+  text-align: right;
+}
+/* line 163, ../sass/_todo-bidders-buyers.scss */
+.todo-bidders-buyers .heading .list li p.qty .total {
+  font-size: 20px;
+}
+
+/* line 2, ../sass/_todo-subject-select-panel.scss */
+.todo-subject-select-panel {
+  background-color: white;
+  border: 1px solid #aaa;
+  height: 50px;
+  position: relative;
+}
+/* line 8, ../sass/_todo-subject-select-panel.scss */
+.todo-subject-select-panel .btn-group {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10px;
+}
+/* line 16, ../sass/_todo-subject-select-panel.scss */
+.todo-subject-select-panel .btn {
+  min-width: 150px;
+}
+/* line 19, ../sass/_todo-subject-select-panel.scss */
+.todo-subject-select-panel .btn.active {
+  pointer-events: none;
+}
+/* line 22, ../sass/_todo-subject-select-panel.scss */
+.todo-subject-select-panel .btn.active:before {
+  font-family: FontAwesome;
+  content: "\f04b";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -15px;
+  color: #333;
+}
+/* line 38, ../sass/_todo-subject-select-panel.scss */
+.todo-subject-select-panel label {
+  border-radius: 0px;
+  margin-left: 50px !important;
+}
+/* line 42, ../sass/_todo-subject-select-panel.scss */
+.todo-subject-select-panel label.no-user-type {
+  display: none;
+}
+/* line 45, ../sass/_todo-subject-select-panel.scss */
+.todo-subject-select-panel label.bidder {
+  background-color: #B1B17B;
+}
+/* line 48, ../sass/_todo-subject-select-panel.scss */
+.todo-subject-select-panel label.buyer {
+  background-color: #ff9966;
+}
+/* line 51, ../sass/_todo-subject-select-panel.scss */
+.todo-subject-select-panel label.all-bidders {
+  background-color: #669999;
+}
+
+/* line 1, ../sass/_details-page.scss */
+#details-page {
+  width: 1325px;
+  margin: 0 auto 0;
+  margin-bottom: 25px;
+}
+/* line 8, ../sass/_details-page.scss */
+#details-page section {
+  background-color: white;
+  margin: 2px 0;
+  padding: 5px 25px;
+}
+/* line 14, ../sass/_details-page.scss */
+#details-page .bottom .bh-centered-icon + .details-pagination-panel {
+  /* hide during page load */
+  visibility: hidden;
+}
+/* line 18, ../sass/_details-page.scss */
+#details-page .container-details-pagination-panel.bottom .fa-cog {
+  /* no gear on bottom pagination panel */
+  visibility: hidden;
+}
+/* line 23, ../sass/_details-page.scss */
+#details-page #container-details-bids-list {
+  min-height: 300px;
+}
+/* line 27, ../sass/_details-page.scss */
+#details-page pre {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* line 2, ../sass/_details-header.scss */
+#details-header .content {
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+  font-size: 16px;
+  height: 200px;
+}
+/* line 9, ../sass/_details-header.scss */
+#details-header .content .dropdown {
+  position: absolute;
+  top: 0px;
+  right: -75px;
+  width: 200px;
+  text-align: right;
+}
+/* line 17, ../sass/_details-header.scss */
+#details-header .content .dropdown ul li {
+  width: 200px;
+  font-size: 20px;
+}
+/* line 20, ../sass/_details-header.scss */
+#details-header .content .dropdown ul li a {
+  text-align: left;
+  margin-left: 0px;
+}
+/* line 24, ../sass/_details-header.scss */
+#details-header .content .dropdown ul li i {
+  color: yellowgreen;
+  margin-right: 25px;
+}
+/* line 31, ../sass/_details-header.scss */
+#details-header .content .dropdown .fa-bars {
+  font-size: 24px;
+  color: #888;
+}
+/* line 35, ../sass/_details-header.scss */
+#details-header .content .dropdown .fa-bars:hover {
+  color: #333;
+  cursor: pointer;
+}
+/* line 41, ../sass/_details-header.scss */
+#details-header .content .dropdown ul a {
+  cursor: pointer;
+}
+/* line 47, ../sass/_details-header.scss */
+#details-header .content .content-left, #details-header .content .content-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 51, ../sass/_details-header.scss */
+#details-header .content .content-left {
+  left: 0;
+}
+/* line 54, ../sass/_details-header.scss */
+#details-header .content .content-left ul {
+  margin-bottom: 0;
+}
+/* line 56, ../sass/_details-header.scss */
+#details-header .content .content-left ul li {
+  display: inline;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 5px;
+  position: relative;
+  vertical-align: middle;
+  font-style: italic;
+}
+/* line 65, ../sass/_details-header.scss */
+#details-header .content .content-left ul li:before {
+  content: '';
+  height: 5px;
+  width: 5px;
+  background-color: blue;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 76, ../sass/_details-header.scss */
+#details-header .content .content-left ul .value {
+  font-style: normal;
+  font-weight: bold;
+}
+/* line 82, ../sass/_details-header.scss */
+#details-header .content .content-left .cash-area {
+  height: 75px;
+  width: 525px;
+  display: table;
+  margin: 10px 0;
+}
+/* line 88, ../sass/_details-header.scss */
+#details-header .content .content-left .cash-area .items-and-amount {
+  display: table-cell;
+  width: 75%;
+  background-color: #ccc;
+  color: white;
+  line-height: 75px;
+  padding: 5px 25px 0;
+}
+/* line 97, ../sass/_details-header.scss */
+#details-header .content .content-left .cash-area .items-and-amount .number-items {
+  float: left;
+  font-size: 20px;
+}
+/* line 102, ../sass/_details-header.scss */
+#details-header .content .content-left .cash-area .items-and-amount .order-total {
+  float: right;
+  font-size: 36px;
+}
+/* line 105, ../sass/_details-header.scss */
+#details-header .content .content-left .cash-area .items-and-amount .order-total .smaller {
+  font-size: 20px;
+}
+/* line 112, ../sass/_details-header.scss */
+#details-header .content .content-left .cash-area .cash-available {
+  background-color: #eee;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 119, ../sass/_details-header.scss */
+#details-header .content .content-left .cash-area .cash-available .image-container {
+  height: 35px;
+  width: 35px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+/* line 125, ../sass/_details-header.scss */
+#details-header .content .content-left .cash-area .cash-available .label {
+  font-size: 16px;
+  color: #888;
+  position: relative;
+  top: 10px;
+}
+/* line 137, ../sass/_details-header.scss */
+#details-header .content .content-right {
+  right: 0;
+  text-align: right;
+  font-size: 16px;
+}
+/* line 142, ../sass/_details-header.scss */
+#details-header .content .content-right bh-stage-progress-indicator {
+  display: inline-block;
+  position: relative;
+  right: -15px;
+  margin: 25px 0;
+}
+/* line 150, ../sass/_details-header.scss */
+#details-header .content .content-right .bid-info .high-priority-indicator {
+  background-color: crimson;
+  color: white;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+/* line 157, ../sass/_details-header.scss */
+#details-header .content .content-right .bid-info .high-priority-indicator i {
+  margin-right: 10px;
+}
+/* line 161, ../sass/_details-header.scss */
+#details-header .content .content-right .bid-info .bid-id {
+  display: inline-block;
+}
+/* line 164, ../sass/_details-header.scss */
+#details-header .content .content-right .bid-info .bid-id b {
+  font-size: 20px;
+}
+/* line 171, ../sass/_details-header.scss */
+#details-header .content:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 179, ../sass/_details-header.scss */
+#details-header .days-left-notification {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+  text-align: center;
+  left: 725px;
+  color: white;
+  background-color: crimson;
+  border: 10px solid #ddd;
+}
+/* line 192, ../sass/_details-header.scss */
+#details-header .days-left-notification .text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-60%) rotate(-10deg);
+}
+/* line 197, ../sass/_details-header.scss */
+#details-header .days-left-notification .text .num-days {
+  font-size: 36px;
+  position: relative;
+  top: 5px;
+}
+/* line 202, ../sass/_details-header.scss */
+#details-header .days-left-notification .text .days {
+  font-size: 20px;
+}
+/* line 205, ../sass/_details-header.scss */
+#details-header .days-left-notification .text .remaining {
+  font-size: 16px;
+}
+
+/* line 7, ../sass/_details-buyers.scss */
+#details-buyers .all-buyers {
+  margin: 25px 0 10px;
+}
+/* line 10, ../sass/_details-buyers.scss */
+#details-buyers .all-buyers ul.set {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  transition: transform 0.5s;
+  white-space: nowrap;
+}
+/* line 17, ../sass/_details-buyers.scss */
+#details-buyers .all-buyers ul.set:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1325px;
+  background: linear-gradient(45deg, #898989 25%, #a6a6a6 25%, #a6a6a6 50%, #898989 50%, #898989 75%, #a6a6a6 75%);
+  background-size: 50px 50px;
+  opacity: 0.2;
+}
+/* line 27, ../sass/_details-buyers.scss */
+#details-buyers .all-buyers li.single-section {
+  display: inline-block;
+  cursor: pointer;
+  height: 75px;
+  text-align: center;
+  width: 150px;
+  border: 1px solid black;
+  border-right: none;
+  border-top: none;
+  position: relative;
+}
+/* line 38, ../sass/_details-buyers.scss */
+#details-buyers .all-buyers li.single-section:first-child {
+  border-left: none;
+}
+/* line 41, ../sass/_details-buyers.scss */
+#details-buyers .all-buyers li.single-section:last-child {
+  border-right: 1px solid black;
+}
+/* line 45, ../sass/_details-buyers.scss */
+#details-buyers .all-buyers li.single-section.selected:after {
+  font-family: FontAwesome;
+  content: "\f00c";
+  font-size: 14px;
+  position: absolute;
+  color: green;
+  top: 0px;
+  right: 5px;
+}
+/* line 54, ../sass/_details-buyers.scss */
+#details-buyers .all-buyers li.single-section:hover {
+  box-shadow: inset 0px 0px 10px lightblue;
+}
+/* line 58, ../sass/_details-buyers.scss */
+#details-buyers .all-buyers li.single-section .text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 64, ../sass/_details-buyers.scss */
+#details-buyers .all-buyers li.single-section .text .item-count {
+  color: #aaa;
+}
+/* line 70, ../sass/_details-buyers.scss */
+#details-buyers .all-buyers .main-container {
+  margin: 0 auto;
+  height: 75px;
+}
+/* line 77, ../sass/_details-buyers.scss */
+#details-buyers .all-buyers .set-container {
+  width: 90%;
+  height: 100%;
+  position: relative;
+  border-top: 1px solid  #333;
+  border-bottom: 1px solid #333;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: inset 20px 0 20px -20px #888, inset -20px 0 20px -20px #888;
+}
+/* line 89, ../sass/_details-buyers.scss */
+#details-buyers .all-buyers .mover {
+  position: relative;
+  cursor: pointer;
+  font-size: 48px;
+  color: lightblue;
+  line-height: 75px;
+}
+/* line 96, ../sass/_details-buyers.scss */
+#details-buyers .all-buyers .mover.disabled {
+  color: lightgray;
+  pointer-events: none;
+}
+/* line 102, ../sass/_details-buyers.scss */
+#details-buyers .all-buyers .mover:hover {
+  color: lightskyblue;
+}
+/* line 106, ../sass/_details-buyers.scss */
+#details-buyers .all-buyers .move-left {
+  float: right;
+}
+/* line 110, ../sass/_details-buyers.scss */
+#details-buyers .all-buyers .move-right {
+  float: left;
+}
+/* line 116, ../sass/_details-buyers.scss */
+#details-buyers .selected-buyers {
+  position: relative;
+  min-height: 50px;
+}
+/* line 120, ../sass/_details-buyers.scss */
+#details-buyers .selected-buyers ul {
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 124, ../sass/_details-buyers.scss */
+#details-buyers .selected-buyers ul li {
+  display: inline-block;
+  margin: 5px 15px 5px 0;
+  padding: 0 0 0 15px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #333;
+  border-radius: 17.5px;
+  background-color: white;
+}
+/* line 135, ../sass/_details-buyers.scss */
+#details-buyers .selected-buyers ul li i {
+  cursor: pointer;
+  color: #333;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+/* line 145, ../sass/_details-buyers.scss */
+#details-buyers .selected-buyers ul li i:hover {
+  color: crimson;
+}
+/* line 151, ../sass/_details-buyers.scss */
+#details-buyers .selected-buyers a {
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  font-size: 20px;
+  color: #666;
+}
+/* line 160, ../sass/_details-buyers.scss */
+#details-buyers .selected-buyers a:hover {
+  color: crimson;
+}
+/* line 165, ../sass/_details-buyers.scss */
+#details-buyers .selected-buyers p.none-selected-msg {
+  font-style: italic;
+  color: #888;
+  position: absolute;
+  left: 65px;
+  top: 15px;
+}
+
+/* line 8, ../sass/_details-items.scss */
+#details-items .single-item {
+  margin: 10px 0px;
+  box-shadow: 5px 5px 3px #ddd;
+  display: table;
+  width: 100%;
+  height: 175px;
+  border: 1px solid #aaa;
+}
+/* line 27, ../sass/_details-items.scss */
+#details-items .single-item .column {
+  display: table-cell;
+  border-right: 1px dotted #333;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+}
+/* line 33, ../sass/_details-items.scss */
+#details-items .single-item .column:first-child {
+  border-left: none;
+}
+/* line 36, ../sass/_details-items.scss */
+#details-items .single-item .column:last-child {
+  border-right: none;
+}
+/* line 39, ../sass/_details-items.scss */
+#details-items .single-item .column .header {
+  height: 20%;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  color: yellowgreen;
+}
+/* line 44, ../sass/_details-items.scss */
+#details-items .single-item .column .header > * {
+  position: relative;
+  left: 5px;
+  top: 5px;
+}
+/* line 49, ../sass/_details-items.scss */
+#details-items .single-item .column .header .icon {
+  display: inline-block;
+  font-size: 24px;
+  margin-right: 5px;
+}
+/* line 54, ../sass/_details-items.scss */
+#details-items .single-item .column .header .text {
+  display: inline-block;
+  font-size: 12px;
+}
+/* line 60, ../sass/_details-items.scss */
+#details-items .single-item .column .content {
+  position: relative;
+  margin: 0 auto;
+}
+/* line 67, ../sass/_details-items.scss */
+#details-items .single-item .column.line-num {
+  vertical-align: top;
+  padding-top: 15px;
+  width: 3%;
+}
+/* line 71, ../sass/_details-items.scss */
+#details-items .single-item .column.line-num .content {
+  display: inline-block;
+}
+/* line 73, ../sass/_details-items.scss */
+#details-items .single-item .column.line-num .content .label-text {
+  font-size: small;
+}
+/* line 76, ../sass/_details-items.scss */
+#details-items .single-item .column.line-num .content .number {
+  text-align: left;
+  font-size: medium;
+}
+/* line 82, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info {
+  width: 28%;
+  position: relative;
+}
+/* line 85, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content {
+  height: 100%;
+  width: 95%;
+  position: relative;
+}
+/* line 89, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .quantity {
+  text-align: center;
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  line-height: 44px;
+  border: 3px solid midnightblue;
+  color: midnightblue;
+  background-color: white;
+  transform: rotate(-10deg);
+  font-size: 16px;
+  z-index: 10;
+}
+/* line 104, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .image-holder {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+/* line 107, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .image-holder img {
+  width: auto;
+  height: 125px;
+}
+/* line 112, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .info-panel {
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  display: inline-block;
+  width: 55%;
+}
+/* line 118, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .info-panel .info-panel-contents {
+  height: 100%;
+}
+/* line 120, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .info-panel .info-panel-contents .logo-image-holder {
+  margin-bottom: 5px;
+  text-align: left;
+}
+/* line 123, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .info-panel .info-panel-contents .logo-image-holder img {
+  height: 40px;
+  width: auto;
+}
+/* line 128, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .info-panel .info-panel-contents .item-description {
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #aaa;
+  margin-bottom: 5px;
+}
+/* line 137, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .info-panel .info-panel-contents .item-numbers table {
+  width: 100%;
+}
+/* line 140, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .info-panel .info-panel-contents .item-numbers table tr td {
+  text-align: left;
+}
+/* line 143, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .info-panel .info-panel-contents .item-numbers table tr td:nth-child(1) {
+  color: #aaa;
+  width: 30%;
+}
+/* line 147, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .info-panel .info-panel-contents .item-numbers table tr td:nth-child(2) {
+  color: #222;
+}
+/* line 153, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .info-panel .info-panel-contents .bottom-section {
+  margin-top: 5px;
+}
+/* line 155, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .info-panel .info-panel-contents .bottom-section table {
+  width: 100%;
+}
+/* line 158, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .info-panel .info-panel-contents .bottom-section table tr td:nth-child(1) {
+  text-align: left;
+  color: #aaa;
+}
+/* line 162, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .info-panel .info-panel-contents .bottom-section table tr td:nth-child(2) {
+  text-align: right;
+  color: #222;
+}
+/* line 168, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .info-panel .info-panel-contents .bottom-section .inventory {
+  width: 50%;
+  float: left;
+}
+/* line 171, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .info-panel .info-panel-contents .bottom-section .inventory td:nth-child(1) {
+  width: 90%;
+}
+/* line 175, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .info-panel .info-panel-contents .bottom-section .shipping {
+  width: 40%;
+  float: right;
+}
+/* line 178, ../sass/_details-items.scss */
+#details-items .single-item .column.product-info .content .info-panel .info-panel-contents .bottom-section .shipping td:nth-child(1) {
+  width: 40%;
+}
+/* line 187, ../sass/_details-items.scss */
+#details-items .single-item .column.history-info {
+  width: 17%;
+}
+/* line 189, ../sass/_details-items.scss */
+#details-items .single-item .column.history-info .content {
+  height: 80%;
+}
+/* line 193, ../sass/_details-items.scss */
+#details-items .single-item .column.cost-info {
+  width: 17%;
+}
+/* line 195, ../sass/_details-items.scss */
+#details-items .single-item .column.cost-info .content {
+  height: 80%;
+}
+/* line 199, ../sass/_details-items.scss */
+#details-items .single-item .column.sell-info {
+  width: 14%;
+}
+/* line 201, ../sass/_details-items.scss */
+#details-items .single-item .column.sell-info .content {
+  height: 80%;
+}
+/* line 205, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info {
+  width: 18%;
+  position: relative;
+}
+/* line 210, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content {
+  height: 90%;
+  width: 90%;
+}
+/* line 214, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .top-section {
+  height: 70%;
+  position: relative;
+}
+/* line 217, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .top-section .price-entry-section {
+  width: 57%;
+  height: 90%;
+  position: relative;
+}
+/* line 221, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .top-section .price-entry-section .price-entry-contents {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+/* line 225, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .top-section .price-entry-section .price-entry-contents .section-title {
+  text-align: left;
+  font-size: 16px;
+  color: goldenrod;
+}
+/* line 230, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .top-section .price-entry-section .price-entry-contents .price-input {
+  display: inline-block;
+  margin: 8px 0;
+  position: relative;
+}
+/* line 234, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .top-section .price-entry-section .price-entry-contents .price-input:before {
+  content: '$';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+  z-index: 100;
+  color: #aaa;
+}
+/* line 242, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .top-section .price-entry-section .price-entry-contents .discount-entries {
+  height: 25px;
+  position: relative;
+  text-align: left;
+}
+/* line 246, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .top-section .price-entry-section .price-entry-contents .discount-entries > * {
+  height: 100%;
+  line-height: 25px;
+  border: 1px solid #aaa;
+  position: absolute;
+  padding-left: 3px;
+  color: gray;
+}
+/* line 254, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .top-section .price-entry-section .price-entry-contents .discount-entries .dollars {
+  left: 0;
+  width: 55%;
+}
+/* line 258, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .top-section .price-entry-section .price-entry-contents .discount-entries .percent {
+  right: 0;
+  width: 40%;
+}
+/* line 265, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .top-section .buttons-section {
+  width: 40%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+/* line 270, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .top-section .buttons-section .buttons-section-contents {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 90%;
+  position: relative;
+}
+/* line 275, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .top-section .buttons-section .buttons-section-contents .button-leave-as-is {
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid gray;
+  width: 70px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* line 285, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .top-section .buttons-section .buttons-section-contents .button-buyer-review {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* line 294, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .bottom-section {
+  height: 30%;
+  position: relative;
+}
+/* line 298, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .bottom-section .total {
+  width: 57%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+/* line 306, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .bottom-section .total.small-number {
+  display: block;
+}
+/* line 308, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .bottom-section .total.small-number .dollar-sign {
+  font-size: 16px;
+}
+/* line 311, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .bottom-section .total.small-number .dollars {
+  font-size: 24px;
+}
+/* line 314, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .bottom-section .total.small-number .cents {
+  font-size: 16px;
+}
+/* line 319, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .bottom-section .total.large-number {
+  display: block;
+}
+/* line 324, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .bottom-section .total.large-number .dollars {
+  font-size: 16px;
+}
+/* line 327, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .bottom-section .total.large-number .cents {
+  font-size: 16px;
+}
+/* line 332, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .bottom-section .total:before {
+  content: 'Total';
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+  font-size: 12px;
+  color: #aaa;
+}
+/* line 341, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .bottom-section .total .order-total {
+  text-align: right;
+}
+/* line 347, ../sass/_details-items.scss */
+#details-items .single-item .column.price-info .content .bottom-section .available {
+  width: 40%;
+  right: 0;
+}
+/* line 355, ../sass/_details-items.scss */
+#details-items .single-item .column.lock-action {
+  text-align: center;
+}
+/* line 357, ../sass/_details-items.scss */
+#details-items .single-item .column.lock-action .content {
+  height: 80%;
+  color: #888;
+}
+/* line 360, ../sass/_details-items.scss */
+#details-items .single-item .column.lock-action .content .fa-check-square-o {
+  font-size: 20px;
+}
+/* line 363, ../sass/_details-items.scss */
+#details-items .single-item .column.lock-action .content .fa-lock {
+  font-size: 24px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 375, ../sass/_details-items.scss */
+#details-items bh-button-with-delay {
+  position: relative;
+  display: inline-block;
+}
+/* line 265, ../sass/_site.scss */
+#details-items bh-button-with-delay .button-container {
+  position: relative;
+}
+/* line 268, ../sass/_site.scss */
+#details-items bh-button-with-delay .button-container .button-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  font-size: 16px;
+}
+/* line 277, ../sass/_site.scss */
+#details-items bh-button-with-delay button {
+  height: 35px;
+  width: 70px;
+  pointer-events: auto;
+}
+/* line 281, ../sass/_site.scss */
+#details-items bh-button-with-delay button.waiting {
+  opacity: 0.5;
+  pointer-events: none;
+}
+/* line 289, ../sass/_site.scss */
+#details-items bh-button-with-delay .fa {
+  pointer-events: none;
+}
+/* line 293, ../sass/_site.scss */
+#details-items bh-button-with-delay .fa-check, #details-items bh-button-with-delay .fa-thumbs-o-down, #details-items bh-button-with-delay .fa-hourglass-half {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+/* line 299, ../sass/_site.scss */
+#details-items bh-button-with-delay .fa-hourglass-half {
+  margin: 3px 2px 0 0;
+}
+/* line 303, ../sass/_site.scss */
+#details-items bh-button-with-delay .fa-check {
+  color: white;
+}
+/* line 307, ../sass/_site.scss */
+#details-items bh-button-with-delay .fa-thumbs-o-down {
+  color: red;
+}
+/* line 381, ../sass/_details-items.scss */
+#details-items bh-button-with-delay .button-container:before {
+  font-family: FontAwesome;
+  content: "\f059";
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  left: 4px;
+  color: indianred;
+  pointer-events: none;
+}
+/* line 392, ../sass/_details-items.scss */
+#details-items bh-button-with-delay .button-container .btn-default {
+  border: 1px solid gray;
+}
+/* line 395, ../sass/_details-items.scss */
+#details-items bh-button-with-delay .button-container .btn-default:hover {
+  border: 1px solid lightgray;
+}
+/* line 399, ../sass/_details-items.scss */
+#details-items bh-button-with-delay .button-container .button-text {
+  letter-spacing: 2px;
+  margin-left: 10px;
+}
+/* line 405, ../sass/_details-items.scss */
+#details-items bh-button-with-delay .button-container.on .button-text, #details-items bh-button-with-delay .button-container.on:before {
+  color: white;
+}
+
+/* line 3, ../sass/_details-pagination-panel.scss */
+.details-pagination-panel {
+  background-color: transparent;
+  display: table;
+  width: 90%;
+  padding: 5px 0 0 0;
+  margin: 0 auto;
+}
+/* line 11, ../sass/_details-pagination-panel.scss */
+.details-pagination-panel > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 16, ../sass/_details-pagination-panel.scss */
+.details-pagination-panel .widget-container {
+  text-align: right;
+}
+/* line 20, ../sass/_details-pagination-panel.scss */
+.details-pagination-panel .gear-holder {
+  width: 40px;
+  text-align: center;
+}
+/* line 25, ../sass/_details-pagination-panel.scss */
+.details-pagination-panel .fa-cog {
+  font-family: FontAwesome;
+  content: "\f013";
+  /* cog */
+  font-size: 18px;
+  color: lightblue;
+  display: block;
+  cursor: pointer;
+}
+/* line 33, ../sass/_details-pagination-panel.scss */
+.details-pagination-panel .fa-cog:hover {
+  color: lightskyblue;
+}
+/* line 38, ../sass/_details-pagination-panel.scss */
+.details-pagination-panel .pagination-caption {
+  font-size: 14px;
+  text-align: left;
+  padding-left: 0px;
+}
+/* line 45, ../sass/_details-pagination-panel.scss */
+.details-pagination-panel .pagination-sm {
+  margin: 0;
+}
+/* line 49, ../sass/_details-pagination-panel.scss */
+.details-pagination-panel .pagination-sm > li > a {
+  font-size: 14px;
+}
+/* line 54, ../sass/_details-pagination-panel.scss */
+.details-pagination-panel .items-per-page-caption {
+  right: 160px;
+  font-size: 16px;
+  display: none;
+}
+/* line 60, ../sass/_details-pagination-panel.scss */
+.details-pagination-panel .popover {
+  margin: 12px 3px 0 10px;
+  background-color: mistyrose;
+}
+/* line 65, ../sass/_details-pagination-panel.scss */
+.details-pagination-panel .popover-content {
+  display: inline-flex;
+  /* horizonal alignment of buttons */
+}
+/* line 69, ../sass/_details-pagination-panel.scss */
+.details-pagination-panel .popover-title {
+  font-style: italic;
+}
+/* line 73, ../sass/_details-pagination-panel.scss */
+.details-pagination-panel .popup-closer {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  color: gray;
+  cursor: pointer;
+}
+/* line 81, ../sass/_details-pagination-panel.scss */
+.details-pagination-panel .popup-closer:hover {
+  color: crimson;
+}
+
+/* line 5, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-header {
+  color: yellowgreen;
+  padding: 15px 35px;
+}
+/* line 8, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-header i.gear, #details-bid-setting-modal .modal-header p {
+  display: inline;
+  vertical-align: middle;
+}
+/* line 13, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-header i.gear {
+  font-size: 36px;
+}
+/* line 17, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-header p {
+  margin-left: 25px;
+  font-size: 24px;
+}
+/* line 22, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-header i.closer {
+  font-size: 24px;
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+/* line 30, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-header i.closer:hover {
+  color: #888;
+}
+/* line 36, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body {
+  padding: 10px 35px;
+}
+/* line 41, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 53, ../sass/_mixins.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields > li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 58, ../sass/_mixins.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields > li:nth-child(odd) {
+  float: left;
+  clear: both;
+}
+/* line 62, ../sass/_mixins.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields > li:nth-child(even) {
+  float: right;
+}
+/* line 65, ../sass/_mixins.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields > li > * {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 44, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields > li {
+  height: 150px;
+}
+/* line 48, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .bid-type {
+  position: relative;
+  z-index: 10000;
+}
+/* line 52, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .bid-type:hover .clicker i {
+  color: lightskyblue;
+}
+/* line 56, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .bid-type input {
+  border: 1px solid #333;
+  font-size: 20px;
+  width: 200px;
+  height: 50px;
+  line-height: 1;
+  padding-left: 10px;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently */
+}
+/* line 67, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .bid-type input:hover {
+  box-shadow: inset 0px 0px 10px lightblue;
+}
+/* line 73, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .bid-type .clicker i {
+  font-size: 18px;
+  color: lightblue;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  pointer-events: none;
+}
+/* line 86, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .bid-type ul {
+  min-width: 200px;
+  text-align: left;
+}
+/* line 90, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .bid-type ul a {
+  cursor: pointer;
+  padding-right: 30px;
+  font-size: 20px;
+}
+/* line 102, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .high-priority-toggle button {
+  font-size: 20px;
+  border: 1px solid #333;
+  height: 50px;
+  width: 200px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* line 110, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .high-priority-toggle button.high {
+  color: red;
+}
+/* line 114, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .high-priority-toggle button:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+}
+/* line 121, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range .missing-one-of-dates-error {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  color: red;
+  display: none;
+}
+/* line 130, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range.one-date-missing .missing-one-of-dates-error {
+  display: block;
+}
+/* line 133, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range.one-date-missing input {
+  border-color: red !important;
+}
+/* line 139, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range, #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time {
+  width: 240px;
+  position: relative;
+}
+/* line 144, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range date-picker-directive, #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time date-picker-directive {
+  display: inline-block;
+}
+/* line 147, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range date-picker-directive:nth-of-type(1), #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time date-picker-directive:nth-of-type(1) {
+  float: left;
+}
+/* line 150, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range date-picker-directive:nth-of-type(2), #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time date-picker-directive:nth-of-type(2) {
+  float: right;
+}
+/* line 156, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range ng-include, #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time ng-include {
+  float: right;
+}
+/* line 160, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range:after, #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 164, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range .date-picker, #details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range .hour-picker, #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time .date-picker, #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time .hour-picker {
+  position: relative;
+}
+/* line 168, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range .date-picker:hover .clicker i, #details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range .hour-picker:hover .clicker i, #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time .date-picker:hover .clicker i, #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time .hour-picker:hover .clicker i {
+  color: lightskyblue;
+}
+/* line 172, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range .date-picker input, #details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range .hour-picker input, #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time .date-picker input, #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time .hour-picker input {
+  font-size: 20px;
+  height: 35px;
+  width: 115px;
+  padding: 2px 0 0 5px;
+  border: 1px solid #333;
+  position: relative;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently */
+}
+/* line 183, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range .date-picker input.active, #details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range .hour-picker input.active, #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time .date-picker input.active, #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time .hour-picker input.active {
+  border-color: blue;
+}
+/* line 188, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range .date-picker p, #details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range .hour-picker p, #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time .date-picker p, #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time .hour-picker p {
+  margin-left: 5px;
+}
+/* line 192, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range .date-picker .clicker i, #details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range .hour-picker .clicker i, #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time .date-picker .clicker i, #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time .hour-picker .clicker i {
+  font-size: 18px;
+  color: lightblue;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  pointer-events: none;
+}
+/* line 206, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range .hour-picker ul, #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time .hour-picker ul {
+  min-width: 115px;
+  text-align: right;
+}
+/* line 209, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range .hour-picker ul a, #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time .hour-picker ul a {
+  cursor: pointer;
+  padding-right: 30px;
+}
+/* line 214, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body ul.setup-fields .commitment-date-range .hour-picker .open input, #details-bid-setting-modal .modal-body ul.setup-fields .due-date-time .hour-picker .open input {
+  border-color: blue;
+}
+/* line 221, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-body .field-label {
+  font-size: 20px;
+  font-style: italic;
+  color: #888;
+}
+/* line 229, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-footer {
+  padding: 15px 35px;
+}
+/* line 232, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal .modal-footer button {
+  margin-left: 15px;
+}
+/* line 237, ../sass/_details-bid-setting-modal.scss */
+#details-bid-setting-modal pre {
+  position: absolute;
+  left: -600px;
+  top: -200px;
+  height: 900px;
+}
