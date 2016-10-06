@@ -28,9 +28,14 @@
 <script src="app/js/custom/config/config.js"></script>
  -->
 
+ 	<!-- app -->
+
+<script src="app/js/custom/app/app.js"></script>
+
+
 	<!-- controllers -->
 
-<script src="app/js/custom/controllers/page-controller.js"></script>
+<script src="app/js/custom/controllers/game-controller.js"></script>
 
 
 	<!-- directives -->
@@ -55,10 +60,8 @@
 	  <div ui-view></div>
 	 -->
 
-	<div ng-controller="pageCtrl">
-
-		<p>Message: {{ message }}</p>
-
+	<div>
+		<div ng-include="'app/html/game.html'"></div>
 	</div>
 
 
